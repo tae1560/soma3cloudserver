@@ -3,7 +3,7 @@ GATEWAY="10.12.17.1"
 
 if [ $# == 2 ] 
 then
-  IP=#1
+	IP=#1
 	GATEWAY=#2
 fi
 
