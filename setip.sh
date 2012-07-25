@@ -1,3 +1,4 @@
+#!/bin/sh
 IP="10.12.17.210"
 GATEWAY="10.12.17.1"
 
@@ -6,11 +7,6 @@ then
 	IP=#1
 	GATEWAY=#2
 fi
-
-echo "nameserver 8.8.8.8" > /etc/resolv.conf
-echo "nameserver 4.4.4.4" >> /etc/resolv.conf
-
-/etc/init.d/network restart
 
 DEVICE_NAME=`ifconfig -a | grep eth0`
 
