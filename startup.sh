@@ -2,7 +2,7 @@
 #
 # This script executed when system startup.
 
-# IP binding
+# START HOST's startup shell
 filepath=$0
 folderpath=${filepath%/*}
 host_name=$(hostname)
