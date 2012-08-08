@@ -6,3 +6,4 @@
 filepath=$0
 folderpath=${filepath%/*}
 $folderpath/setip.sh
+$folderpath/setip_eth1.sh
