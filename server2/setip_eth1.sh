@@ -22,7 +22,3 @@ ifconfig $DEVICE_NAME down
 ifconfig $DEVICE_NAME $IP netmask 255.255.255.0 broadcast 255.255.255.255
 
 ifconfig $DEVICE_NAME up
-
-route add default gw $GATEWAY dev $DEVICE_NAME
-
-ifconfig -a
