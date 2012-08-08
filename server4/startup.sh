@@ -8,4 +8,7 @@ folderpath=${filepath%/*}
 $folderpath/setip.sh
 
 # load modules
-$folerpath/setmodules.sh
+$folderpath/setmodules.sh
+
+# virtual ip binding for load balancing
+$folderpath/../setip.sh bond0:0 10.12.17.200
