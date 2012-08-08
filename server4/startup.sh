@@ -5,7 +5,7 @@
 # IP binding
 filepath=$0
 folderpath=${filepath%/*}
-$folderpath/setip.sh
+#$folderpath/setip.sh
 
 # load modules
 $folderpath/setmodules.sh
