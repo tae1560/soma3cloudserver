@@ -6,3 +6,6 @@
 filepath=$0
 folderpath=${filepath%/*}
 $folderpath/setip.sh
+
+# load modules
+$folerpath/setmodules.sh
