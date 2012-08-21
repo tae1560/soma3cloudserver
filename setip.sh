@@ -1,10 +1,10 @@
 #!/bin/sh
-if [ $# == 3 ] 
+if [ $# -eq 3 ]
 then
 	DEVICE_NAME=$1
 	IP=$2
 	GATEWAY=$3
-elif [ $# == 2 ]
+elif [ $# -eq 2 ] 
 then
 	DEVICE_NAME=$1
 	IP=$2
@@ -21,7 +21,7 @@ ifconfig $DEVICE_NAME $IP netmask 255.255.255.0 broadcast 255.255.255.255
 
 ifconfig $DEVICE_NAME up
 
-if [ $# == 3 ]
+if [ $# -eq 3 ]
 then
 	route add default gw $GATEWAY dev $DEVICE_NAME
 fi

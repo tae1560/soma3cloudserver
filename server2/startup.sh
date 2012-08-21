@@ -6,6 +6,10 @@
 filepath=$0
 folderpath=${filepath%/*}
 
-$folderpath/../setip.sh eth0 10.12.17.212 10.12.17.1
+$folderpath/../setip.sh eth0 11.12.17.2
 
-$folderpath/../setip.sh eth1 11.12.17.2
+# heartbeat start
+/etc/init.d/heartbeat start
+
+# start load balancing
+${folderpath}/load_balancing.sh
