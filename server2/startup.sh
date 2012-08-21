@@ -12,4 +12,4 @@ $folderpath/../setip.sh eth0 11.12.17.2
 /etc/init.d/heartbeat start
 
 # start load balancing
-${folderpath}/load_balancing.sh
+${folderpath}/../ha/load_balancing.sh
