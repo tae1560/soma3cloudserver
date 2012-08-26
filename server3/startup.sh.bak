@@ -5,7 +5,6 @@
 # IP binding
 filepath=$0
 folderpath=${filepath%/*}
-#$folderpath/setip.sh
 
 # load modules
 $folderpath/setmodules.sh
@@ -14,10 +13,7 @@ $folderpath/setmodules.sh
 $folderpath/../setip.sh bond0:0 10.12.17.200
 
 # start pvfs2 server
-pvfs2-server -a 10.12.17.216 /etc/pvfs2-fs.conf
-
-# start pvfs2 client
-pvfs2-client -p ./pvfs2-client-core
+pvfs2-server -a 10.12.17.214 /etc/pvfs2-fs.conf
 
 # mount 
 pvfs2fuse /mnt/storage-server1 -o fs_spec="tcp://10.12.17.214:3334/pvfs2-fs" -o allow_other
