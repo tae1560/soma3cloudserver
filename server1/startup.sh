@@ -13,3 +13,6 @@ $folderpath/../setip.sh eth1 11.12.17.1
 
 # start load balancing
 ${folderpath}/../ha/load_balancing.sh
+
+# start logger
+java CSDaemon ipvsadm >> /tmp/cs.log
