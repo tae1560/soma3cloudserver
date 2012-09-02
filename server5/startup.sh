@@ -29,4 +29,4 @@ pvfs2fuse /mnt/storage-server3 -o fs_spec="tcp://10.12.17.218:3334/pvfs2-fs" -o 
 
 #start logger
 cd $folderpath/../daemon
-java CSDaemon pvfs2 traffic >> /tmp/cs.log
+java CSDaemon traffic >> /tmp/cs.log
