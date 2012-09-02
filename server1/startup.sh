@@ -15,4 +15,5 @@ $folderpath/../setip.sh eth1 11.12.17.1
 ${folderpath}/../ha/load_balancing.sh
 
 # start logger
+cd $folderpath/../daemon
 java CSDaemon ipvsadm >> /tmp/cs.log
